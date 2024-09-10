@@ -51,12 +51,23 @@ document.addEventListener("DOMContentLoaded", function () {
 // que dado un tiempo por ejemplo 30 segundos redirija al
 // usuario a:
 // https://www.youtube.com/watch?v=dQw4w9WgXcQ
+function rickRollingUser(timeInSeconds) {
+  setTimeout(function() {
+      window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+  }, timeInSeconds * 1000);
+}
+rickRollingUser(30);
 
 // 1 -  Cambiar el titulo de la pagina por cada un segundo.
 // "80' game 🎮 ", "insert 🪙 "  y "🥔 You won!"
 
 // 2 - annoyingMessage() hacer una funcion que
 // cada 1 minuto aparezca un alert con el mensaje  "Get a Premium Account 🤩"
+
+function annoyingMessage(){
+  setTimeout(()=>{window.alert('Get a Premium Account 🤩')}, 60000)
+}
+//annoyingMessage()
 
 // 4 - Hacer intermitente el mensaje de "Please, insert coin 🪙..."
 // tip: utilizar las clases de css fadeIn fadeOut
